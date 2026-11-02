@@ -1,0 +1,51 @@
+{
+  "id": "IMP-EX-001",
+  "classification": "personal_preference",
+  "status": "retained",
+  "observed_at": "2026-11-02T12:00:00Z",
+  "feedback_source": "Fictional candidate feedback + a two-role demonstration batch; no real postings",
+  "friction": "Onsite roles were surfaced despite a commute constraint; attendance details were missing.",
+  "proposal": "Capture required attendance and surface unknown attendance before ranking the next batch. Keep the existing commute filter unchanged.",
+  "expected_benefit": "Fewer unassessed commute mismatches and less candidate review work.",
+  "affected_domains": [
+    "record_quality"
+  ],
+  "preserves_safeguards": true,
+  "before_versions": {
+    "candidate": 1,
+    "evidence": 1,
+    "base_resume": 1,
+    "style_guide": 1,
+    "search_brief": 1
+  },
+  "after_versions": {
+    "candidate": 1,
+    "evidence": 1,
+    "base_resume": 1,
+    "style_guide": 1,
+    "search_brief": 2
+  },
+  "approval": {
+    "decision": "not_required",
+    "by": "",
+    "at": null,
+    "note": "Capture procedure only; existing goals/filter unchanged. Any commute-filter change requires separate specific human approval."
+  },
+  "trial": {
+    "baseline": "Fictional first batch: two of two roles had attendance unassessed.",
+    "one_change": "Capture attendance and mark unknowns before ranking.",
+    "measure": "Count roles ranked with attendance still unassessed.",
+    "evaluation_boundary": "One next fictional batch of two roles, then stop and review.",
+    "stop_condition": "Stop if no reliable attendance source is available or candidate finds the field unhelpful.",
+    "rollback_checkpoint": "Fictional private checkpoint before IMP-EX-001; no real path",
+    "rollback_action": "Restore prior capture procedure in a new search-brief version; retain unrelated preferences and approvals.",
+    "result": "Fictional next batch: zero of two ranked with attendance unassessed; one unknown role held for clarification.",
+    "limitations": "Tiny invented demonstration; no inference about interview rate or causation."
+  },
+  "decision": {
+    "at": "2026-11-02T12:00:00Z",
+    "by": "Fictional candidate and agent review",
+    "rationale": "Keep attendance capture because the demonstration reduced unanswered attendance fields. This is a tentative operational observation.",
+    "checkpoint": "Fictional private checkpoint after IMP-EX-001; search brief v2"
+  }
+}
