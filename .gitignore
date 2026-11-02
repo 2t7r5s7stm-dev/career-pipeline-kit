@@ -1,0 +1,16 @@
+# Runtime candidate data and generated personal packets never belong in this repo.
+.private/
+private/
+workspaces/
+packets/
+checkpoints/
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+*.zip
