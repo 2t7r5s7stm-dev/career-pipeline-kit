@@ -1,0 +1,50 @@
+test_changed_approved_claim_requires_new_fact_approval (test_action_scope.ActionScopeTests) ... ok
+test_inconclusive_http_success_is_not_observation (test_action_scope.ActionScopeTests) ... ok
+test_new_intent_does_not_reuse_submission_consent (test_action_scope.ActionScopeTests) ... ok
+test_pre_submission_check_has_own_immediate_window (test_action_scope.ActionScopeTests) ... ok
+test_bad_source_url_returns_validation_errors (test_cli_and_privacy.CliPrivacyTests) ... ok
+test_cli_transition_default_dry_run_preserves_bytes (test_cli_and_privacy.CliPrivacyTests) ... ok
+test_complete_reminder_suppresses_cycle (test_cli_and_privacy.CliPrivacyTests) ... ok
+test_decline_one_role_does_not_exclude_employer_and_stops_reminder (test_cli_and_privacy.CliPrivacyTests) ... ok
+test_duplicate_canonical_identity_rejected (test_cli_and_privacy.CliPrivacyTests) ... ok
+test_full_demo_and_output_integrity (test_cli_and_privacy.CliPrivacyTests) ... ok
+test_optional_cover_letter_omitted (test_cli_and_privacy.CliPrivacyTests) ... ok
+test_privacy_scan_detects_common_leaks (test_cli_and_privacy.CliPrivacyTests) ... ok
+test_private_blank_init_and_refuse_overwrite (test_cli_and_privacy.CliPrivacyTests) ... ok
+test_profile_fact_approval_does_not_require_role (test_cli_and_privacy.CliPrivacyTests) ... ok
+test_release_zip_excludes_private_runtime_and_checks_links (test_cli_and_privacy.CliPrivacyTests) ... ok
+test_untrusted_text_stays_literal_and_does_not_modify_state (test_cli_and_privacy.CliPrivacyTests) ... ok
+test_completed_review_needs_result_rationale_and_checkpoint (test_improvement_records.ImprovementRecordTests) ... ok
+test_declared_safeguard_weakening_is_rejected (test_improvement_records.ImprovementRecordTests) ... ok
+test_duplicate_improvement_ids_rejected (test_improvement_records.ImprovementRecordTests) ... ok
+test_historical_versions_survive_later_profile_edits_without_decrement (test_improvement_records.ImprovementRecordTests) ... ok
+test_only_one_active_trial (test_improvement_records.ImprovementRecordTests) ... ok
+test_optional_record_preserves_earlier_state_compatibility (test_improvement_records.ImprovementRecordTests) ... ok
+test_retained_and_reverted_records_validate_and_preserve_history (test_improvement_records.ImprovementRecordTests) ... ok
+test_sensitive_proposal_can_wait_but_trial_needs_specific_approval (test_improvement_records.ImprovementRecordTests) ... ok
+test_trial_needs_baseline_boundary_stop_and_rollback (test_improvement_records.ImprovementRecordTests) ... ok
+test_ambiguous_history_still_requires_review_after_status_reset (test_release_review.ReleaseReviewTests) ... ok
+test_ambiguous_history_suppresses_reminder_after_status_reset (test_release_review.ReleaseReviewTests) ... ok
+test_absent_adapter_blocks_even_approved_materials (test_review_edges.ReviewEdgeTests) ... ok
+test_aggregator_cannot_confirm_active (test_review_edges.ReviewEdgeTests) ... ok
+test_bad_timestamp_is_validation_error_not_exception (test_review_edges.ReviewEdgeTests) ... ok
+test_closed_after_tailoring_keeps_packet_but_stops_apply_action (test_review_edges.ReviewEdgeTests) ... ok
+test_current_official_observation_can_support_intention (test_review_edges.ReviewEdgeTests) ... ok
+test_example_validates (test_review_edges.ReviewEdgeTests) ... ok
+test_latest_unknown_does_not_reuse_earlier_active (test_review_edges.ReviewEdgeTests) ... ok
+test_material_role_change_invalidates_exact_approval_even_without_version_bump (test_review_edges.ReviewEdgeTests) ... ok
+test_new_requisition_has_distinct_history (test_review_edges.ReviewEdgeTests) ... ok
+test_numeric_substring_is_not_metric_confirmation (test_review_edges.ReviewEdgeTests) ... ok
+test_packet_dry_run_has_no_filesystem_or_state_effect (test_review_edges.ReviewEdgeTests) ... ok
+test_packet_readiness_never_records_application (test_review_edges.ReviewEdgeTests) ... ok
+test_posting_age_is_not_action_verification_age (test_review_edges.ReviewEdgeTests) ... ok
+test_reminder_cycle_is_persistently_deduplicated (test_review_edges.ReviewEdgeTests) ... ok
+test_reminder_opt_out_snooze_and_stop (test_review_edges.ReviewEdgeTests) ... ok
+test_stale_packet_can_be_reprepared_and_preserved (test_review_edges.ReviewEdgeTests) ... ok
+test_unapproved_facts_cannot_produce_packet (test_review_edges.ReviewEdgeTests) ... ok
+test_unresolved_metrics_stay_out_of_resume (test_review_edges.ReviewEdgeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 45 tests in 0.215s
+
+OK
