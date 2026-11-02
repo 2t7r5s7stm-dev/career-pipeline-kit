@@ -1,0 +1,56 @@
+{
+  "schema_version": "0.1",
+  "fictional": false,
+  "candidate": {
+    "version": 1,
+    "display_name": "",
+    "positioning": "",
+    "contact_lines": []
+  },
+  "evidence": {
+    "version": 1,
+    "claims": []
+  },
+  "base_resume": {
+    "version": 1,
+    "sections": []
+  },
+  "style_guide": {
+    "version": 1,
+    "voice": [],
+    "avoid": [],
+    "spelling": "choose region",
+    "format_notes": []
+  },
+  "search_brief": {
+    "version": 1,
+    "capabilities": [],
+    "role_families": [],
+    "title_synonyms": [],
+    "hard_filters": [],
+    "preferences": [],
+    "exclusions": [],
+    "tradeoffs": [],
+    "unknowns": []
+  },
+  "roles": [],
+  "approvals": [],
+  "reminder_preferences": {
+    "opted_in": false,
+    "cadence_hours": 0,
+    "timezone": "",
+    "channel": "",
+    "purpose": "",
+    "quiet_hours": ""
+  },
+  "reminders": [],
+  "adapter_capabilities": {
+    "model": false,
+    "browser": false,
+    "scheduler": false,
+    "delivery": false,
+    "submission": false
+  },
+  "audit": [],
+  "improvements": []
+}

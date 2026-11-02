@@ -1,0 +1,42 @@
+{
+  "adapter_name": "manual-session-template",
+  "version": "0.1",
+  "schema_note": "Agent/manual contract; not imported by the local CLI",
+  "capabilities": {
+    "public_browsing": {
+      "status": "unverified",
+      "evidence": "Check the chosen environment"
+    },
+    "authenticated_browsing": {
+      "status": "unavailable",
+      "evidence": "No authorization recorded"
+    },
+    "scoped_private_files": {
+      "status": "unverified",
+      "evidence": "Candidate must choose allowed folder"
+    },
+    "persistent_state": {
+      "status": "unverified",
+      "evidence": "Confirm write/read-back and checkpoint path"
+    },
+    "scheduled_runtime": {
+      "status": "unavailable",
+      "evidence": "Not implemented by v0.1 CLI"
+    },
+    "notification_channel": {
+      "status": "unavailable",
+      "evidence": "No scheduler or delivery adapter"
+    },
+    "external_writes": {
+      "status": "unavailable",
+      "evidence": "No outgoing adapter or authorization"
+    }
+  },
+  "network_destinations": [],
+  "credential_storage_method": "None; never place credentials in this file",
+  "unattended_execution": false,
+  "fallback": "Save a private checkpoint and ask the user to resume",
+  "last_checked_at": null,
+  "session_reference": "Revalidate for each new provider/session or changed tools; reuse the private career checkpoint",
+  "evidence_rule": "Available requires current observed evidence, scope and check time; product names and another session are not evidence"
+}

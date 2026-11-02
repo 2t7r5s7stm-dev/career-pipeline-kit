@@ -1,0 +1,15 @@
+{
+  "work_order_id": "EXAMPLE-ONLY",
+  "agent_role": "career_editor",
+  "objective": "Select supported evidence for a baseline resume",
+  "input_versions": {"candidate": 1, "evidence": 1, "style_guide": 1},
+  "allowed_inputs": ["Candidate-approved private evidence bank"],
+  "allowed_actions": ["Read scoped files", "Propose draft wording"],
+  "prohibited_actions": ["Invent claims", "Upload private data", "Submit applications"],
+  "expected_outputs": ["Editable source", "Claim ID map", "Targeted questions"],
+  "acceptance_checks": ["Accurate ownership", "Confirmed claims only", "Style does not change facts"],
+  "result": "pending",
+  "unknowns": [],
+  "next_human_decision": "Approve or revise proposed wording",
+  "checkpoint_reference": "Use a private scoped reference; never publish candidate paths"
+}
