@@ -1,0 +1,13 @@
+{
+  "role_id": "role-001",
+  "packet_version": 1,
+  "packet_fingerprint": "925143794ae2e9413020deeb932ce33c39f8dd2232e1a770f9df8e8910080764",
+  "generated_at": "2026-11-02T12:00:00Z",
+  "application_status": "not_applied",
+  "files": {
+    "review.md": "135f9fab75c296b1aeef1b1318d0287d4023226cd9434daf13af707fa66eb0cc",
+    "resume.md": "73b720079b0b4b848dcfdcf231027b80ef253eab5a90bb9fa88b806449f81443",
+    "cover-letter.md": "b189aa2ba9d8d4fa5c967a6c3758048011dd906b4681aa89e6d51a432be8a20b",
+    "structured-input.json": "98a55f800c3dfc34b91912339032eb2156a42bff48eea23efa514e983eaebda3"
+  }
+}

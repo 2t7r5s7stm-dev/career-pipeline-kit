@@ -1,0 +1,180 @@
+{
+  "privacy": "PRIVATE REVIEW SOURCE; share only exact approved resume/letter files",
+  "candidate": {
+    "version": 1,
+    "display_name": "Avery Example",
+    "positioning": "Operations leader who builds clear handoffs and supports cross-functional teams.",
+    "contact_lines": [
+      "avery@example.invalid"
+    ]
+  },
+  "selected_evidence": [
+    {
+      "id": "E-001",
+      "text": "Led a four-person team redesigning onboarding handoffs, establishing a shared checklist and clearer ownership.",
+      "kind": "achievement",
+      "status": "confirmed",
+      "confirmation_basis": "candidate",
+      "source": "Fictional candidate-approved interview note INT-001",
+      "confirmed_by": "Fictional candidate",
+      "confirmed_at": "2026-10-30T12:00:00Z",
+      "scope": "team",
+      "metrics": [],
+      "details": {
+        "organization": "Harborlight Example Cooperative (fictional)",
+        "role": "Operations lead",
+        "date_range": "Dates to confirm before real use",
+        "problem": "Inconsistent handoffs",
+        "contribution": "Led team design and adoption; teammates created parts of the checklist",
+        "collaborators": "Onboarding team and service leads (fictional)",
+        "outcome": "Clearer documented process; no verified time savings",
+        "uncertainty": "No reliable numeric time-reduction evidence.",
+        "confidentiality": "Fictional public demonstration only",
+        "relevance": "Operations and enablement"
+      }
+    },
+    {
+      "id": "E-002",
+      "text": "Supported service leads in reviewing recurring handoff issues and documenting escalation decisions.",
+      "kind": "achievement",
+      "status": "confirmed",
+      "confirmation_basis": "candidate",
+      "source": "Fictional candidate-approved interview note INT-002",
+      "confirmed_by": "Fictional candidate",
+      "confirmed_at": "2026-10-30T12:00:00Z",
+      "scope": "supported",
+      "metrics": [],
+      "details": {
+        "organization": "Harborlight Example Cooperative (fictional)",
+        "role": "Operations lead",
+        "date_range": "Dates to confirm before real use",
+        "problem": "Recurring issues",
+        "contribution": "Facilitated review and documented decisions",
+        "collaborators": "Onboarding team and service leads (fictional)",
+        "outcome": "Shared escalation reference",
+        "uncertainty": "No reliable numeric time-reduction evidence.",
+        "confidentiality": "Fictional public demonstration only",
+        "relevance": "Operations and enablement"
+      }
+    },
+    {
+      "id": "E-003",
+      "text": "Completed a fictional certificate in service operations from Example Learning Institute.",
+      "kind": "education",
+      "status": "confirmed",
+      "confirmation_basis": "source",
+      "source": "Fictional certificate record EDU-001; not a real credential",
+      "confirmed_by": "Fictional candidate",
+      "confirmed_at": "2026-10-30T12:00:00Z",
+      "scope": "direct",
+      "metrics": [],
+      "details": {
+        "organization": "Harborlight Example Cooperative (fictional)",
+        "role": "Learner",
+        "date_range": "Dates to confirm before real use",
+        "problem": "Learning need",
+        "contribution": "Completed fictional course",
+        "collaborators": "Onboarding team and service leads (fictional)",
+        "outcome": "Fictional earned certificate",
+        "uncertainty": "No reliable numeric time-reduction evidence.",
+        "confidentiality": "Fictional public demonstration only",
+        "relevance": "Operations and enablement"
+      }
+    }
+  ],
+  "role_source": {
+    "id": "role-001",
+    "employer": "Northstar Example Services (fictional)",
+    "title": "Operations Enablement Lead",
+    "requisition_id": "EX-101",
+    "canonical_url": "https://careers.example.invalid/jobs/EX-101",
+    "canonical_source_type": "employer",
+    "identity_key": "northstar example services (fictional)|req:ex-101",
+    "revision": 1,
+    "posting_date": "2026-06-01",
+    "posting_date_source": "Fictional official posting snapshot POST-001",
+    "posting_date_precision": "day",
+    "first_seen_at": "2026-10-30T12:00:00Z",
+    "discovery_url": "https://leads.example.invalid/operations-lead",
+    "location": "Example City; fictional region",
+    "work_arrangement": "Hybrid (fictional)",
+    "attendance": "Fictional posting says occasional planned attendance; confirm frequency",
+    "pay": {
+      "text": "Example range: 90000–110000 EXC base/year; fictional currency",
+      "source_url": "https://careers.example.invalid/jobs/EX-101",
+      "kind": "employer_posted",
+      "minimum": 90000,
+      "maximum": 110000,
+      "currency": "EXC",
+      "period": "year",
+      "basis": "base",
+      "geography": "Fictional region only",
+      "unknowns": [
+        "Bonus and location adjustments not supplied"
+      ]
+    },
+    "assessment": {
+      "fit": [
+        "Team-led handoff redesign maps to enablement scope",
+        "Cross-functional service coordination"
+      ],
+      "gaps": [
+        "No confirmed ownership of the employer’s specific CRM"
+      ],
+      "questions": [
+        "What attendance is actually required?",
+        "How are onboarding ownership and workload shared?"
+      ],
+      "hard_filter_result": "pass",
+      "hard_filter_notes": [
+        "Fictional posting has no mandatory relocation or commission-only condition"
+      ]
+    },
+    "related_role_ids": []
+  },
+  "packet": {
+    "version": 1,
+    "created_at": "2026-11-02T12:00:00Z",
+    "input_versions": {
+      "candidate": 1,
+      "evidence": 1,
+      "base_resume": 1,
+      "style_guide": 1,
+      "search_brief": 1,
+      "role": 1
+    },
+    "sections": [
+      {
+        "heading": "Selected experience",
+        "evidence_ids": [
+          "E-001",
+          "E-002"
+        ]
+      },
+      {
+        "heading": "Education and development",
+        "evidence_ids": [
+          "E-003"
+        ]
+      }
+    ],
+    "cover_letter": {
+      "requested": true,
+      "evidence_ids": [
+        "E-001",
+        "E-002"
+      ]
+    },
+    "status": "approved",
+    "qa": {
+      "fingerprint": "925143794ae2e9413020deeb932ce33c39f8dd2232e1a770f9df8e8910080764",
+      "reviewer": "Fictional independent reviewer",
+      "findings": [
+        "Approved claim IDs only; E-004 invented metric excluded.",
+        "Leadership scope preserved; editable Markdown text inspected.",
+        "Rendered Word/PDF visual QA remains required if those exports are created."
+      ]
+    },
+    "fingerprint": "925143794ae2e9413020deeb932ce33c39f8dd2232e1a770f9df8e8910080764"
+  }
+}
