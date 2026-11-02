@@ -1,0 +1,74 @@
+[
+  {
+    "type": "approve",
+    "approval_id": "SIM-FACTS",
+    "kind": "facts",
+    "actor": "human",
+    "fingerprint": "88594fcfd604f2c6da61e12797a2755a6b452bf0ba304a4563293947ac6d7c5a",
+    "note": "SIMULATED fictional candidate fact and positioning approval."
+  },
+  {
+    "type": "approve",
+    "approval_id": "SIM-ROLE",
+    "kind": "role_selection",
+    "actor": "human",
+    "fingerprint": "4f38e96325ce4a7f5b4ab3183321c003e3a63df8180d97e352893020d3e2a2b2",
+    "note": "SIMULATED fictional role selection."
+  },
+  {
+    "type": "prepare_packet",
+    "sections": [
+      {
+        "heading": "Selected experience",
+        "evidence_ids": [
+          "E-001",
+          "E-002"
+        ]
+      },
+      {
+        "heading": "Education and development",
+        "evidence_ids": [
+          "E-003"
+        ]
+      }
+    ],
+    "cover_letter": {
+      "requested": true,
+      "evidence_ids": [
+        "E-001",
+        "E-002"
+      ]
+    }
+  },
+  {
+    "type": "qa_pass",
+    "fingerprint": "925143794ae2e9413020deeb932ce33c39f8dd2232e1a770f9df8e8910080764",
+    "reviewer": "Fictional independent reviewer",
+    "checks": [
+      "Approved claim IDs only; E-004 invented metric excluded.",
+      "Leadership scope preserved; editable Markdown text inspected.",
+      "Rendered Word/PDF visual QA remains required if those exports are created."
+    ]
+  },
+  {
+    "type": "approve",
+    "approval_id": "SIM-MATERIALS",
+    "kind": "materials",
+    "actor": "human",
+    "fingerprint": "925143794ae2e9413020deeb932ce33c39f8dd2232e1a770f9df8e8910080764",
+    "note": "SIMULATED approval of the exact fictional materials."
+  },
+  {
+    "type": "intend_apply",
+    "intent_id": "INTENT-SIM-001"
+  },
+  {
+    "type": "verify",
+    "verification_id": "VERIFY-SIM-001",
+    "outcome": "active",
+    "source_type": "employer",
+    "url": "https://careers.example.invalid/jobs/EX-101",
+    "evidence": "SIMULATED official page explicitly states the matching requisition is accepting applications; apply form available. Not browsed; reserved example domain.",
+    "purpose": "intention"
+  }
+]

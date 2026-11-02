@@ -1,0 +1,431 @@
+{
+  "schema_version": "0.1",
+  "fictional": true,
+  "candidate": {
+    "version": 1,
+    "display_name": "Avery Example",
+    "positioning": "Operations leader who builds clear handoffs and supports cross-functional teams.",
+    "contact_lines": [
+      "avery@example.invalid"
+    ]
+  },
+  "evidence": {
+    "version": 1,
+    "claims": [
+      {
+        "id": "E-001",
+        "text": "Led a four-person team redesigning onboarding handoffs, establishing a shared checklist and clearer ownership.",
+        "kind": "achievement",
+        "status": "confirmed",
+        "confirmation_basis": "candidate",
+        "source": "Fictional candidate-approved interview note INT-001",
+        "confirmed_by": "Fictional candidate",
+        "confirmed_at": "2026-10-30T12:00:00Z",
+        "scope": "team",
+        "metrics": [],
+        "details": {
+          "organization": "Harborlight Example Cooperative (fictional)",
+          "role": "Operations lead",
+          "date_range": "Dates to confirm before real use",
+          "problem": "Inconsistent handoffs",
+          "contribution": "Led team design and adoption; teammates created parts of the checklist",
+          "collaborators": "Onboarding team and service leads (fictional)",
+          "outcome": "Clearer documented process; no verified time savings",
+          "uncertainty": "No reliable numeric time-reduction evidence.",
+          "confidentiality": "Fictional public demonstration only",
+          "relevance": "Operations and enablement"
+        }
+      },
+      {
+        "id": "E-002",
+        "text": "Supported service leads in reviewing recurring handoff issues and documenting escalation decisions.",
+        "kind": "achievement",
+        "status": "confirmed",
+        "confirmation_basis": "candidate",
+        "source": "Fictional candidate-approved interview note INT-002",
+        "confirmed_by": "Fictional candidate",
+        "confirmed_at": "2026-10-30T12:00:00Z",
+        "scope": "supported",
+        "metrics": [],
+        "details": {
+          "organization": "Harborlight Example Cooperative (fictional)",
+          "role": "Operations lead",
+          "date_range": "Dates to confirm before real use",
+          "problem": "Recurring issues",
+          "contribution": "Facilitated review and documented decisions",
+          "collaborators": "Onboarding team and service leads (fictional)",
+          "outcome": "Shared escalation reference",
+          "uncertainty": "No reliable numeric time-reduction evidence.",
+          "confidentiality": "Fictional public demonstration only",
+          "relevance": "Operations and enablement"
+        }
+      },
+      {
+        "id": "E-003",
+        "text": "Completed a fictional certificate in service operations from Example Learning Institute.",
+        "kind": "education",
+        "status": "confirmed",
+        "confirmation_basis": "source",
+        "source": "Fictional certificate record EDU-001; not a real credential",
+        "confirmed_by": "Fictional candidate",
+        "confirmed_at": "2026-10-30T12:00:00Z",
+        "scope": "direct",
+        "metrics": [],
+        "details": {
+          "organization": "Harborlight Example Cooperative (fictional)",
+          "role": "Learner",
+          "date_range": "Dates to confirm before real use",
+          "problem": "Learning need",
+          "contribution": "Completed fictional course",
+          "collaborators": "Onboarding team and service leads (fictional)",
+          "outcome": "Fictional earned certificate",
+          "uncertainty": "No reliable numeric time-reduction evidence.",
+          "confidentiality": "Fictional public demonstration only",
+          "relevance": "Operations and enablement"
+        }
+      },
+      {
+        "id": "E-004",
+        "text": "Reduced onboarding time by 40%.",
+        "kind": "achievement",
+        "status": "unresolved",
+        "confirmation_basis": "none",
+        "source": "Unsubstantiated suggestion retained as a QA trap; never select",
+        "confirmed_by": "",
+        "confirmed_at": null,
+        "scope": "team",
+        "metrics": [
+          {
+            "value": "40%",
+            "unit": "percent",
+            "baseline": "unknown",
+            "period": "unknown",
+            "attribution": "unknown",
+            "source": "unsubstantiated",
+            "confirmed": false
+          }
+        ],
+        "details": {
+          "organization": "Harborlight Example Cooperative (fictional)",
+          "role": "Operations lead",
+          "date_range": "Dates to confirm before real use",
+          "problem": "Unknown baseline",
+          "contribution": "Unknown",
+          "collaborators": "Onboarding team and service leads (fictional)",
+          "outcome": "Unverified; excluded from packet",
+          "uncertainty": "No reliable numeric time-reduction evidence.",
+          "confidentiality": "Fictional public demonstration only",
+          "relevance": "Operations and enablement"
+        }
+      }
+    ]
+  },
+  "base_resume": {
+    "version": 1,
+    "sections": [
+      {
+        "heading": "Selected experience",
+        "evidence_ids": [
+          "E-001",
+          "E-002"
+        ]
+      },
+      {
+        "heading": "Education and development",
+        "evidence_ids": [
+          "E-003"
+        ]
+      }
+    ]
+  },
+  "style_guide": {
+    "version": 1,
+    "voice": [
+      "Direct, specific, calm",
+      "Name leadership and collaborators accurately"
+    ],
+    "avoid": [
+      "Invented metrics",
+      "Inflated hands-on ownership",
+      "Generic hype"
+    ],
+    "spelling": "US English",
+    "format_notes": [
+      "Single column for exported resume",
+      "Readable headings and text",
+      "Length depends on relevant evidence"
+    ]
+  },
+  "search_brief": {
+    "version": 1,
+    "capabilities": [
+      "Onboarding process design",
+      "Team leadership",
+      "Cross-functional coordination"
+    ],
+    "role_families": [
+      "Operations enablement",
+      "Customer operations"
+    ],
+    "title_synonyms": [
+      "Operations lead",
+      "Enablement manager"
+    ],
+    "hard_filters": [
+      "No required weekly relocation",
+      "No commission-only compensation"
+    ],
+    "preferences": [
+      "Collaborative environment",
+      "Remote or occasional planned attendance"
+    ],
+    "exclusions": [
+      "Commission-only roles"
+    ],
+    "tradeoffs": [
+      "Consider hybrid for clear scope and sustainable attendance"
+    ],
+    "unknowns": [
+      "Minimum pay to confirm before real search"
+    ]
+  },
+  "roles": [
+    {
+      "id": "role-001",
+      "employer": "Northstar Example Services (fictional)",
+      "title": "Operations Enablement Lead",
+      "requisition_id": "EX-101",
+      "canonical_url": "https://careers.example.invalid/jobs/EX-101",
+      "canonical_source_type": "employer",
+      "identity_key": "northstar example services (fictional)|req:ex-101",
+      "revision": 1,
+      "posting_date": "2026-06-01",
+      "posting_date_source": "Fictional official posting snapshot POST-001",
+      "posting_date_precision": "day",
+      "first_seen_at": "2026-10-30T12:00:00Z",
+      "discovery_url": "https://leads.example.invalid/operations-lead",
+      "location": "Example City; fictional region",
+      "work_arrangement": "Hybrid (fictional)",
+      "attendance": "Fictional posting says occasional planned attendance; confirm frequency",
+      "pay": {
+        "text": "Example range: 90000\u2013110000 EXC base/year; fictional currency",
+        "source_url": "https://careers.example.invalid/jobs/EX-101",
+        "kind": "employer_posted",
+        "minimum": 90000,
+        "maximum": 110000,
+        "currency": "EXC",
+        "period": "year",
+        "basis": "base",
+        "geography": "Fictional region only",
+        "unknowns": [
+          "Bonus and location adjustments not supplied"
+        ]
+      },
+      "assessment": {
+        "fit": [
+          "Team-led handoff redesign maps to enablement scope",
+          "Cross-functional service coordination"
+        ],
+        "gaps": [
+          "No confirmed ownership of the employer\u2019s specific CRM"
+        ],
+        "questions": [
+          "What attendance is actually required?",
+          "How are onboarding ownership and workload shared?"
+        ],
+        "hard_filter_result": "pass",
+        "hard_filter_notes": [
+          "Fictional posting has no mandatory relocation or commission-only condition"
+        ]
+      },
+      "job_status": "closed",
+      "verifications": [
+        {
+          "id": "VERIFY-SIM-001",
+          "at": "2026-11-02T12:00:00Z",
+          "outcome": "active",
+          "source_type": "employer",
+          "url": "https://careers.example.invalid/jobs/EX-101",
+          "evidence": "SIMULATED official page explicitly states the matching requisition is accepting applications; apply form available. Not browsed; reserved example domain.",
+          "purpose": "intention",
+          "intent_id": "INTENT-SIM-001"
+        },
+        {
+          "id": "VERIFY-SIM-CLOSED",
+          "at": "2026-11-02T12:01:00Z",
+          "outcome": "closed",
+          "source_type": "employer",
+          "url": "https://careers.example.invalid/jobs/EX-101",
+          "evidence": "SIMULATED official posting states applications are closed.",
+          "purpose": "intention",
+          "intent_id": "INTENT-SIM-001"
+        }
+      ],
+      "intent": {
+        "id": "INTENT-SIM-001",
+        "at": "2026-11-02T12:00:00Z"
+      },
+      "packet": {
+        "version": 1,
+        "created_at": "2026-11-02T12:00:00Z",
+        "input_versions": {
+          "candidate": 1,
+          "evidence": 1,
+          "base_resume": 1,
+          "style_guide": 1,
+          "search_brief": 1,
+          "role": 1
+        },
+        "sections": [
+          {
+            "heading": "Selected experience",
+            "evidence_ids": [
+              "E-001",
+              "E-002"
+            ]
+          },
+          {
+            "heading": "Education and development",
+            "evidence_ids": [
+              "E-003"
+            ]
+          }
+        ],
+        "cover_letter": {
+          "requested": true,
+          "evidence_ids": [
+            "E-001",
+            "E-002"
+          ]
+        },
+        "status": "approved",
+        "qa": {
+          "fingerprint": "925143794ae2e9413020deeb932ce33c39f8dd2232e1a770f9df8e8910080764",
+          "reviewer": "Fictional independent reviewer",
+          "findings": [
+            "Approved claim IDs only; E-004 invented metric excluded.",
+            "Leadership scope preserved; editable Markdown text inspected.",
+            "Rendered Word/PDF visual QA remains required if those exports are created."
+          ]
+        },
+        "fingerprint": "925143794ae2e9413020deeb932ce33c39f8dd2232e1a770f9df8e8910080764"
+      },
+      "application": {
+        "status": "not_applied",
+        "history": []
+      },
+      "related_role_ids": [],
+      "packet_history": [],
+      "decision": "apply_intent"
+    }
+  ],
+  "approvals": [
+    {
+      "id": "SIM-FACTS",
+      "kind": "facts",
+      "role_id": null,
+      "fingerprint": "88594fcfd604f2c6da61e12797a2755a6b452bf0ba304a4563293947ac6d7c5a",
+      "decision": "approved",
+      "at": "2026-11-02T12:00:00Z",
+      "actor": "human",
+      "note": "SIMULATED fictional candidate fact and positioning approval."
+    },
+    {
+      "id": "SIM-ROLE",
+      "kind": "role_selection",
+      "role_id": "role-001",
+      "fingerprint": "4f38e96325ce4a7f5b4ab3183321c003e3a63df8180d97e352893020d3e2a2b2",
+      "decision": "approved",
+      "at": "2026-11-02T12:00:00Z",
+      "actor": "human",
+      "note": "SIMULATED fictional role selection."
+    },
+    {
+      "id": "SIM-MATERIALS",
+      "kind": "materials",
+      "role_id": "role-001",
+      "fingerprint": "925143794ae2e9413020deeb932ce33c39f8dd2232e1a770f9df8e8910080764",
+      "decision": "approved",
+      "at": "2026-11-02T12:00:00Z",
+      "actor": "human",
+      "note": "SIMULATED approval of the exact fictional materials."
+    }
+  ],
+  "reminder_preferences": {
+    "opted_in": true,
+    "cadence_hours": 48,
+    "timezone": "Etc/UTC",
+    "channel": "manual local review",
+    "purpose": "Finish a selected packet",
+    "quiet_hours": "Manual review only; no automatic delivery"
+  },
+  "reminders": [
+    {
+      "id": "REM-001",
+      "role_id": "role-001",
+      "task": "Review the packet and decide whether to apply; optional cover letter only if useful.",
+      "next_due_at": "2026-11-02T12:00:00Z",
+      "snoozed_until": null,
+      "enabled": true,
+      "acknowledged_keys": []
+    }
+  ],
+  "adapter_capabilities": {
+    "model": false,
+    "browser": false,
+    "scheduler": false,
+    "delivery": false,
+    "submission": false
+  },
+  "audit": [
+    {
+      "at": "2026-11-02T12:00:00Z",
+      "role_id": null,
+      "event": "approve",
+      "mode": "fictional_simulation"
+    },
+    {
+      "at": "2026-11-02T12:00:00Z",
+      "role_id": "role-001",
+      "event": "approve",
+      "mode": "fictional_simulation"
+    },
+    {
+      "at": "2026-11-02T12:00:00Z",
+      "role_id": "role-001",
+      "event": "prepare_packet",
+      "mode": "fictional_simulation"
+    },
+    {
+      "at": "2026-11-02T12:00:00Z",
+      "role_id": "role-001",
+      "event": "qa_pass",
+      "mode": "fictional_simulation"
+    },
+    {
+      "at": "2026-11-02T12:00:00Z",
+      "role_id": "role-001",
+      "event": "approve",
+      "mode": "fictional_simulation"
+    },
+    {
+      "at": "2026-11-02T12:00:00Z",
+      "role_id": "role-001",
+      "event": "intend_apply",
+      "mode": "fictional_simulation"
+    },
+    {
+      "at": "2026-11-02T12:00:00Z",
+      "role_id": "role-001",
+      "event": "verify",
+      "mode": "fictional_simulation"
+    },
+    {
+      "at": "2026-11-02T12:01:00Z",
+      "role_id": "role-001",
+      "event": "verify",
+      "mode": "fictional_simulation"
+    }
+  ],
+  "improvements": []
+}

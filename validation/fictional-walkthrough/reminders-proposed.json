@@ -1,0 +1,11 @@
+[
+  {
+    "id": "REM-001",
+    "role_id": "role-001",
+    "task": "Review the packet and decide whether to apply; optional cover letter only if useful.",
+    "dedupe_key": "0915625c87ffd1574eaa1f0f6ac532bd750c60dab84006084b375c923ca87562",
+    "channel": "manual local review",
+    "timezone": "Etc/UTC",
+    "delivery": "not_sent; no delivery adapter"
+  }
+]

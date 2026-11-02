@@ -1,0 +1,10 @@
+[
+  {
+    "role_id": "role-001",
+    "action": "Ready for manual application review; obtain submission consent and recheck immediately before any authorized submission."
+  },
+  {
+    "role_id": null,
+    "action": "Model, browser, scheduler, delivery and submission adapters are absent; CLI performs local work only."
+  }
+]
