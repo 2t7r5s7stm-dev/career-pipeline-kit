@@ -62,6 +62,18 @@ For role work, identify employer plus requisition or canonical official source. 
 
 Use [intake and résumé](docs/intake-resume.md) and [search and packets](docs/search-and-packets.md) as runbooks. The role prompts under `prompts/` are reusable responsibilities, not a requirement to run multiple agents. Preserve editable sources and a claim map. Inspect exported documents visually before claiming visual QA is complete.
 
+## 4a. Route “update my LinkedIn” through the existing evidence
+
+Use the [LinkedIn runbook](docs/linkedin-profile.md), [audit](templates/linkedin-profile-audit.md), [profile editor prompt](prompts/linkedin-editor.md) and [update packet](templates/linkedin-update-packet.md). Reuse the current evidence bank, search brief and style guide; do not restart intake or require a completed résumé. Begin with the desired audience/outcome, what matters today, available time and visibility preferences, reusing answers already known.
+
+Inventory and read only the current profile text or permitted snapshots supplied or explicitly accessible in this session. A pasted section is enough; no LinkedIn connection is required. Mark sections, visuals and live settings you cannot see as not reviewed. Do not infer a public profile from a résumé or claim to have inspected an account.
+
+Assess headline, About, experience, skills and visual presentation against the person’s goals. Explain the tradeoff between leading with recognizable employer work, an independent project or another supported strength. Use accurate recruiter/audience vocabulary without inventing expertise or promising search rank or callbacks. Visual advice should address signal, legibility, crop and accessibility from actual supplied views; do not infer traits or judge attractiveness.
+
+Keep confirmed facts separate from public-profile clearance. Résumé approval does not clear employer metrics, internal systems, confidential names or contact details for publication. Offer omission or accurate generalization with approval, never a made-up number or title. Preserve actual employment/project distinctions and team attribution. Use the person’s voice, with a small number of choices and clean copy separate from private evidence notes.
+
+Track drafted copy, exact-material approval and actual publication independently in private Markdown records. The CLI does not validate LinkedIn clearance, profile status or these extra records; do not add unsupported fields to workspace.json. Support manual copy-paste. Editing a profile or changing its visuals, visibility, job-search signals or notification settings requires separate explicit action permission and real capability, including the exact account/fields/version. Read back the actual result or leave it unverified; never turn draft approval into a published claim.
+
 ## 5. Return with a small decision set
 
 A returning check-in should recover state before asking the person to remember it. Reuse the approved summary and explored families, ask what changed, and offer only the decisions useful now. For example: “We have your approved summary and two role families. Has anything changed? With ten minutes, we can review a few roles, develop one accomplishment, or finish the selected packet.” For a role roster, show compact status, fit, latest check and one decision per role rather than a dense tracking export.

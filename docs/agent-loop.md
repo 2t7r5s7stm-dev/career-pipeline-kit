@@ -23,6 +23,7 @@ Discovery may begin while intake continues. The evidence bank remains broad acro
 | Orchestrator | Choose the next useful job, preserve versions, route questions and reconcile results | A scoped work order; no duplicate task or contradictory state; one clear next decision |
 | Intake researcher | Elicit career evidence, sources, dates, scope and attribution | Traceable evidence with unknowns flagged; no invented facts or credentials |
 | Career editor | Select relevant evidence and develop positioning, base résumé and style guide | Editable drafts tied to confirmed evidence; leadership and team outcomes attributed accurately |
+| LinkedIn profile editor (optional) | Compare supplied/permitted profile material with existing evidence, audiences, goals and voice; propose positioning, copy and visual recommendations | [Versioned profile packet](../templates/linkedin-update-packet.md), public-clearance map, limited questions; no assumed account access or profile changes |
 | Role researcher | Discover leads, resolve role identity, assess fit and check official sources | Official source and requisition identity when available; observed status, evidence and verification time |
 | Tailoring writer | Adapt approved positioning and evidence to a selected role | Versioned résumé and optional cover letter with a claim map; unresolved claims excluded or visibly held for review |
 | Independent QA reviewer | Challenge facts, fit, chronology, attribution, formatting and workflow state | Specific pass/fail findings against the work order; corrections checked before readiness is claimed |
@@ -93,6 +94,8 @@ Present the useful result first, then one concrete ask. For example: “The rés
 Use new information to update the evidence bank, search brief or style guide before producing dependent versions. Keep the original evidence and change history. Reuse confirmed evidence across applications without copying old role-specific claims into a new context unchecked.
 
 When the candidate intends to apply, check the official employer or ATS posting again and record what was observable and when. A blocked, login-only or inconclusive page means unknown. If a role closes after tailoring, preserve the work, stop application prompts for that requisition and ask whether to archive it or explore a related requisition. A new or reposted requisition gets its own identity and history.
+
+For a LinkedIn request, [follow the profile workflow](linkedin-profile.md) rather than replaying intake. Approval of résumé facts or a profile draft is not clearance for public disclosure or permission to edit an account. Keep the public-clearance map, exact-copy approval and actual publication evidence separate. The local CLI does not enforce these profile records.
 
 ## A useful session ending
 

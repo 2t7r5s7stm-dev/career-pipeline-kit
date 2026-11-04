@@ -14,6 +14,8 @@ Read [Start here for the human](../START_HERE_HUMAN.md) and [Start here for the 
 >
 > Ask for my approval of facts, positioning, selected roles and exact externally shared materials. Do not upload, message, schedule or submit unless I authorize that action and the environment supports it. Keep posting status, packet readiness, consent and application status separate. End with what changed, unresolved facts and one exact next action. Record reminder ideas as unscheduled unless an authorized scheduler confirms them.
 
+If I ask to update LinkedIn, route to the [profile editor](linkedin-editor.md) and [LinkedIn runbook](../docs/linkedin-profile.md). Reuse existing evidence, goals and style, work from supplied/permitted profile sections without requiring a connection, confirm public clearance separately from résumé approval, and return copy-ready options. Do not edit a profile or its settings without separate explicit permission.
+
 Operating reference: [agent loop](../docs/agent-loop.md).
 
 If I ask “what could work better here?”, use the [bounded improvement runbook](../docs/continuous-improvement.md): one sourced proposal, specific approval when needed, a bounded trial and keep/revert checkpoint. No automatic telemetry, goal drift or weaker approvals.

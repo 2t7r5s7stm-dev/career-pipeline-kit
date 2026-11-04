@@ -2,7 +2,9 @@
 
 **[Start here for the human](START_HERE_HUMAN.md)** · **[Start here for the agent](START_HERE_AGENT.md)**
 
-A practical job-search workflow for a person and their preferred AI assistant. Bring your experience and decisions; let the agent help read, organize, draft and keep track. Start with a truthful résumé, develop a useful search strategy, then review roles and application materials in small, manageable steps.
+A practical job-search workflow for a person and their preferred AI assistant. Bring your experience and decisions; let the agent help read, organize, draft and keep track. Build a truthful résumé, refresh your LinkedIn positioning, develop a useful search strategy, or review an application in small, manageable steps.
+
+**Local review addition:** the LinkedIn workflow described here is prepared for review and has not been pushed or added to the published v0.1.0 release.
 
 **This public v0.1 early release is open to feedback.** It includes guides, prompts, templates, fictional examples and an optional local Python tool. It is a reference workflow you can adapt, with tested local controls and clearly stated limits. It is not a hosted service or a running autonomous job-search agent. Actual novice and cross-provider usability testing remains to be done.
 
@@ -26,6 +28,7 @@ Keep personal working files in `.private/your-search/` or another separately pro
 | --- | --- | --- |
 | Intake and résumé | Recover evidence across the whole career; select relevant material for a baseline | [Intake runbook](docs/intake-resume.md), [evidence bank](templates/evidence-bank.md), [base résumé](templates/base-resume.md) |
 | Tailoring and voice | Confirm positioning, truthful wording and a practical style guide | [Style guide](templates/style-guide.md), [career editor prompt](prompts/career-editor.md) |
+| LinkedIn update (optional) | Review the current profile against goals, voice and public-sharing preferences; prepare accurate copy and visual recommendations | [LinkedIn runbook](docs/linkedin-profile.md), [editor prompt](prompts/linkedin-editor.md), [review packet](templates/linkedin-update-packet.md) |
 | Search setup | Separate hard filters from preferences; capture capabilities, tradeoffs and exclusions | [Search brief](templates/search-brief.md), [search runbook](docs/search-and-packets.md) |
 | Search and review | Discover leads, verify official sources, review pursue/investigate/decline decisions | [Role assessment](templates/role-assessment.md), [role researcher prompt](prompts/role-researcher.md) |
 | Agent loopbacks | Assign scoped work, record versions and unknowns, return a concise decision | [Agent loop](docs/agent-loop.md), [handoff template](templates/agent-handoff.json) |
@@ -34,11 +37,22 @@ Keep personal working files in `.private/your-search/` or another separately pro
 
 A résumé selects from a broad evidence bank; it does not erase useful older work. Leadership, enabling and team outcomes count, with accurate attribution. No invented metrics, credentials, dates, screening answers or hands-on ownership. Discovery can begin while intake continues; final claims use approved evidence.
 
+## Update my LinkedIn
+
+Ask your agent “help me update my LinkedIn.” It should reuse your evidence bank, search brief and style guide, then read only the profile text or permitted snapshots you choose to share. No LinkedIn connection, full export or account access is required. It can work from pasted sections and mark anything unseen as not reviewed.
+
+Together, assess headline, About, experience, skills and visual presentation against the audiences and roles you want. Consider whether recognizable employer experience, an independent project or another supported contribution should lead; no single order suits everyone. Return a few positioning choices, a recommendation with reasons, copy-ready revisions in your voice, and a short next decision.
+
+Confirmed facts still need clearance for a public profile, especially employer metrics and internal systems. Preserve your preferences about job-search visibility. Drafting or approving text does not authorize changing your profile, banner, settings or notifications. The [review packet](templates/linkedin-update-packet.md) keeps drafted, approved and actually published changes separate and supports manual copy-paste. [See a fictional example](examples/fictional/linkedin-update.md).
+
+This is an agent-guided workflow, with no LinkedIn API, connector requirement or CLI profile editor.
+
 ## What works today
 
 | Capability | Local v0.1 implementation | Agent, person or adapter responsibility |
 | --- | --- | --- |
 | Intake, editing, research and tailoring | Guides, prompts and templates | Conduct the conversation and operate available authorized tools |
+| LinkedIn review | Runbook, audit template, editor prompt and copy-ready packet | Read supplied material, confirm public clearance, perform factual/visual QA and any separately authorized manual edits |
 | State | Local JSON structure and semantic validation | Enter evidence accurately and preserve private checkpoints |
 | Lifecycle | Pure transitions; default dry-run; explicit `--commit` writes local state | Record actual human decisions and resolve uncertainties |
 | Packets | Render approved exact claims into editable Markdown; hash files; preserve prior output folders | Role-specific writing and any Word/PDF export, factual and visual review |

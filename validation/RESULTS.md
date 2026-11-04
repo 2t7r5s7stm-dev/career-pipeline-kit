@@ -1,4 +1,6 @@
-# Validation results · v0.1.0
+# Validation results · published v0.1.0 baseline
+
+For the pending local LinkedIn addition, see [the separate review record](linkedin-workflow-review.md). The checks below describe the published baseline.
 
 Validated locally using Python 3.9.6. All candidate, employer, credential, posting, approval and observation data used is fictional. The fictional validation run performs no live research or model calls and creates no real schedule, notification, upload or application. This describes the demonstration, separately from delivery/publication of the reusable kit.
 

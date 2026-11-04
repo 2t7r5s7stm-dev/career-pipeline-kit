@@ -52,6 +52,18 @@ You may have a substantial conversation about your experience, goals and constra
 
 **Agent:** “I'll preserve your leadership accountability and the supervisors' delivery. I've saved that evidence and the two directions. Next I'll bring you a short experience summary to approve and a few search ideas. You do not need to organize the notes or choose a title before we continue.”
 
+## If today’s task is “update my LinkedIn”
+
+You can start there without rebuilding the résumé or choosing a single job title. The agent should reuse your existing evidence, goals and style preferences. Share only the profile sections you want reviewed: pasted text, a permitted copy or optional redacted screenshots are enough. No LinkedIn connection or account access is required; unseen sections and visuals stay “not reviewed.”
+
+It can help assess your headline, About, experience, skills and visual presentation. The useful question is what signal supports your intended audience: recognizable employer experience, an independent project, leadership, a specialty or another supported strength. You choose what leads and how visible your search should be. The agent should bring a few options and copy-ready text in your voice, rather than ask you to administer another tracker.
+
+A fact you approved for a résumé may still be unsuitable for a public profile. Decide separately what may be public, including employer metrics, internal systems and contact details. No publishing, profile edits, banner replacement or visibility/notification changes follow from drafting approval. You can copy approved sections yourself; “drafted,” “approved” and “published” are different states.
+
+Try: “Help me update my LinkedIn using the evidence and goals we already have. Read what I share before asking questions, mark what you cannot see, and give me a few accurate positioning choices with copy-ready revisions. Ask what is safe for a public profile. Leave edits and visibility settings to my separate decision.”
+
+Your agent can follow the [LinkedIn runbook](docs/linkedin-profile.md) and [profile editor prompt](prompts/linkedin-editor.md).
+
 ## When you come back
 
 You can say, “Pick up where we left off. I have ten minutes.” A useful check-in is: “We have your approved summary and two role families. Has anything changed? We can review a few roles, develop one accomplishment, or finish a packet.” The agent should recover current state without making you reconstruct the previous session. When roles exist, ask for a compact roster showing status, fit, latest check and one decision per role.

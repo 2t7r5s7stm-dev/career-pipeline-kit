@@ -1,6 +1,6 @@
 # Release contents · v0.1.0
 
-This v0.1 early release contains the reusable kit and fictional demonstration data only. It does not run scheduled work or submit applications.
+The published v0.1.0 base contains the reusable kit and fictional demonstration data only. The optional LinkedIn workflow in this local branch is prepared for review and is not yet published. It does not run scheduled work or submit applications.
 
 | Path | Purpose |
 | --- | --- |
@@ -14,6 +14,7 @@ This v0.1 early release contains the reusable kit and fictional demonstration da
 | [schemas/workspace.schema.json](schemas/workspace.schema.json) | Portable typed local state with additional semantic rules in core |
 | `career_pipeline/` | Standard-library Python CLI and local lifecycle rules; no external adapters |
 | [examples/fictional/WALKTHROUGH.md](examples/fictional/WALKTHROUGH.md) | Fictional scenario and rerunnable commands |
+| [docs/linkedin-profile.md](docs/linkedin-profile.md) | Pending local LinkedIn workflow: audit, copy-ready packet, optional editor prompt and fictional example; no profile adapter |
 | [docs/continuous-improvement.md](docs/continuous-improvement.md) | Bounded private improvement loop; local record checks, agent-operated trials and sanitized proposals |
 | `tests/` | State, consent, source status, reminder, CLI, privacy and packaging tests |
 | [tools/check_project.py](tools/check_project.py) | Offline local-link/common-leak scan and allowlisted local ZIP generation |
