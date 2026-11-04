@@ -1,6 +1,6 @@
 # Validation results · published v0.1.0 baseline
 
-For the pending local LinkedIn addition, see [the separate review record](linkedin-workflow-review.md). The checks below describe the published baseline.
+For the v0.1.1 LinkedIn addition and current 80-test suite, see [the separate review record](linkedin-workflow-review.md) and [retained test output](tests-v0.1.1.txt). The checks below describe the v0.1.0 baseline.
 
 Validated locally using Python 3.9.6. All candidate, employer, credential, posting, approval and observation data used is fictional. The fictional validation run performs no live research or model calls and creates no real schedule, notification, upload or application. This describes the demonstration, separately from delivery/publication of the reusable kit.
 
@@ -18,7 +18,7 @@ python3 tools/check_project.py
 
 The retained walkthrough already exists; to rerun the demo choose a fresh destination such as `.private/review-run`. Commands refuse to overwrite earlier output.
 
-Expected final suite: **45 unique tests pass** across five test modules. [Retained test output](tests.txt). Tests include safe dry-run and default CLI nonmutation, profile approval without roles, stale packet repair/history, unsupported and numeric-substring metrics, changed facts/role inputs, intent-scoped consent, separate pre-submission window, latest unknown overriding active, aggregator rejection, closed-after-tailoring behavior, new requisition history, duplicate identity, optional cover letters, reminder opt-out/dedupe/snooze/stop/completion/decline, absent adapters, output hash integrity, selected-only evidence export, untrusted text rendering, privacy markers and ZIP runtime exclusion.
+The v0.1.0 baseline suite: **45 unique tests pass** across five test modules. [Retained test output](tests.txt). Tests include safe dry-run and default CLI nonmutation, profile approval without roles, stale packet repair/history, unsupported and numeric-substring metrics, changed facts/role inputs, intent-scoped consent, separate pre-submission window, latest unknown overriding active, aggregator rejection, closed-after-tailoring behavior, new requisition history, duplicate identity, optional cover letters, reminder opt-out/dedupe/snooze/stop/completion/decline, absent adapters, output hash integrity, selected-only evidence export, untrusted text rendering, privacy markers and ZIP runtime exclusion.
 
 [Walkthrough report](fictional-walkthrough/report.json): valid state, hashes match, zero network calls, zero scheduled reminders and zero applications sent. [Review packet](fictional-walkthrough/packet-v1/review.md), [résumé](fictional-walkthrough/packet-v1/resume.md) and [optional letter](fictional-walkthrough/packet-v1/cover-letter.md) were read as editable text. Unsupported E-004 is absent from résumé, letter and selected-evidence snapshot. A later closed observation retains the packet and stops the application path. These checks do not prove Word/PDF appearance; those formats were not created.
 
@@ -60,6 +60,6 @@ Full historical workspace checkpoints are saved by the agent/operator before edi
 
 Public v0.1 early release is authorized. The license split is Apache 2.0 for code and specified implementation files, and CC BY 4.0 for authored guides/templates and fictional content, with attribution to James E. Dunn. The public repository starts with clean history and a reviewed source file set. Live automation still needs separately implemented/reviewed adapters and authorization.
 
-## Pending local LinkedIn addition · 2026-11-04
+## v0.1.1 LinkedIn addition
 
-The unpublished `linkedin-profile-workflow` branch adds consultative profile review and a scoped execution bridge, with manual fallback and a fictional local-file host. The full suite now passes **80 tests**, including 35 new profile regression tests. A separate reviewer ran 17 independent probes and the full suite; identified issues were fixed and no substantive finding remains open. See the [focused review](linkedin-workflow-review.md) for implementation boundaries, exact checks, source-gate limitations and host responsibilities, plus the [retained fictional demo](linkedin-execution-demo.json). This does not change the published v0.1.0 artifacts or claim a tested live LinkedIn adapter.
+The reviewed LinkedIn addition adds consultative profile review and a scoped execution bridge, with manual fallback and a fictional local-file host. The full suite now passes **80 tests**, including 35 new profile regression tests. A separate reviewer ran 17 independent probes and the full suite; identified issues were fixed and no substantive finding remains open. See the [focused review](linkedin-workflow-review.md) for implementation boundaries, exact checks, source-gate limitations and host responsibilities, plus the [retained fictional demo](linkedin-execution-demo.json). The v0.1.1 release preserves the earlier v0.1.0 artifacts and does not claim a tested live LinkedIn adapter.

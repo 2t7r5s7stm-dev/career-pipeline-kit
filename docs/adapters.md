@@ -20,7 +20,7 @@ The local reference implementation uses the Python standard library. It can perf
 
 The CLI does not become an autonomous service when placed on a schedule. A scheduler can invoke local commands, but research, model work, external delivery and submission still need their own supported adapters and controls.
 
-The local-review LinkedIn addition has a practical [execution interface](linkedin-execution.md), with one-time durable dispatch, current-value checking and conservative uncertainty. A host agent can operate its permitted tools from scoped JSON jobs; this is not a tested live LinkedIn integration. Automated scope is headline, About and one stable experience-entry body. Skills, titles, dates, media and settings remain manual-only. A fixture success cannot establish capability in another environment.
+The LinkedIn addition has a practical [execution interface](linkedin-execution.md), with one-time durable dispatch, current-value checking and conservative uncertainty. A host agent can operate its permitted tools from scoped JSON jobs; this is not a tested live LinkedIn integration. Automated scope is headline, About and one stable experience-entry body. Skills, titles, dates, media and settings remain manual-only. A fixture success cannot establish capability in another environment.
 
 ## Declare capabilities before assigning work
 

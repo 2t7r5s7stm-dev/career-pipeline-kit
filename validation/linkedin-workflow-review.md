@@ -1,6 +1,6 @@
-# LinkedIn addition — local review
+# LinkedIn addition — implementation review
 
-Prepared 2026-11-04 against the published v0.1.0 base, on `linkedin-profile-workflow`. This addition has not been pushed, published, added to a release or uploaded to Library. Existing public release artifacts remain unchanged.
+Reviewed 2026-11-04 against the published v0.1.0 base, on `linkedin-profile-workflow`. The reviewed addition was subsequently approved for publication as v0.1.1. Earlier v0.1.0 artifacts remain unchanged. The checks below concern the reusable kit and fictional demonstrations, not any real profile update.
 
 ## Reviewable experience
 
@@ -40,7 +40,7 @@ python3 -m career_pipeline profile demo --out <fresh-private-profile-demo-direct
 
 **80 tests pass**: 45 existing tests and 35 profile-engine/CLI tests. The offline source/link/privacy/JSON check has zero findings; see [current preflight](publication-check.json). Whitespace checks pass. Both complete fictional demos pass. The profile demo performs one local fixture write, verifies that headline/version, leaves About not attempted, and makes zero live calls. [Retained result](linkedin-execution-demo.json).
 
-The local review ZIP is tested for integrity, exact committed source inventory/content, excluded runtime/cache/private paths and clean extraction. Tests/preflight also run from that extraction. These checks verify the reviewed local implementation and package; they are not live LinkedIn or empirical cross-provider usability tests. Common-pattern privacy scanning is not a guarantee about future contributions.
+The reviewed source ZIP is tested for integrity, exact committed source inventory/content, excluded runtime/cache/private paths and clean extraction. Tests/preflight also run from that extraction. These checks verify the reviewed local implementation and package; they are not live LinkedIn or empirical cross-provider usability tests. Common-pattern privacy scanning is not a guarantee about future contributions.
 
 ## Independent review
 
@@ -66,4 +66,4 @@ All example material is fictional. No private career facts, real snapshots, cont
 
 Relevant instructions checked: repository `AGENTS.md`, both start guides, existing evidence/style/consent workflows and the writing-style skill. The style reference service was unavailable; edits follow the kit voice and requested approach without claiming a retrieved personal style match. No media or document-export skill was needed.
 
-The next decision is James's review of this local addition before any push/publication or separately scoped live adapter work.
+James approved publication of this kit addition. Any live adapter work, profile modification or external action still requires its own scope and permission.

@@ -1,18 +1,18 @@
-# Career Pipeline Kit · v0.1
+# Career Pipeline Kit · v0.1.1
 
 **[Start here for the human](START_HERE_HUMAN.md)** · **[Start here for the agent](START_HERE_AGENT.md)**
 
 A practical job-search workflow for a person and their preferred AI assistant. Bring your experience and decisions; let the agent help read, organize, draft and keep track. Build a truthful résumé, refresh your LinkedIn positioning, develop a useful search strategy, or review an application in small, manageable steps.
 
-**Local review addition:** the LinkedIn workflow described here is prepared for review and has not been pushed or added to the published v0.1.0 release.
+**New in v0.1.1:** consultative LinkedIn profile review, copy-ready updates and an optional scoped execution bridge. The prompt workflow works with your existing AI; no code or connection is required.
 
-**This public v0.1 early release is open to feedback.** It includes guides, prompts, templates, fictional examples and an optional local Python tool. It is a reference workflow you can adapt, with tested local controls and clearly stated limits. It is not a hosted service or a running autonomous job-search agent. Actual novice and cross-provider usability testing remains to be done.
+**This public early release is open to feedback.** It includes guides, prompts, templates, fictional examples and an optional local Python tool. It is a reference workflow you can adapt, with tested local controls and clearly stated limits. It is not a hosted service or a running autonomous job-search agent. Actual novice and cross-provider usability testing remains to be done.
 
 Use Copilot, Claude, ChatGPT/GPT, DeepSeek, Gemini or another assistant. These are examples, not capability guarantees. Shared files, explicit handoffs and current capability checks make the workflow portable.
 
 ## Begin without code
 
-1. Download the release ZIP or clone this repository, then read [Start here for the human](START_HERE_HUMAN.md).
+1. Download the [v0.1.1 source ZIP](https://github.com/2t7r5s7stm-dev/career-pipeline-kit/archive/refs/tags/v0.1.1.zip) or clone this repository, then read [Start here for the human](START_HERE_HUMAN.md).
 2. Give your chosen assistant [Start here for the agent](START_HERE_AGENT.md) and [AGENTS.md](AGENTS.md), or paste the short orientation from the human guide.
 3. Tell it what would help today and share only material you are permitted and comfortable to use with that service. Old résumés, scattered notes or a conversation are enough. Nothing is mandatory, and you do not need to organize everything first.
 
@@ -51,7 +51,7 @@ No live LinkedIn connector or UI driver is bundled or tested. The runnable refer
 
 ## What works today
 
-| Capability | Local v0.1 implementation | Agent, person or adapter responsibility |
+| Capability | Local implementation | Agent, person or adapter responsibility |
 | --- | --- | --- |
 | Intake, editing, research and tailoring | Guides, prompts and templates | Conduct the conversation and operate available authorized tools |
 | LinkedIn review | Runbook, audit template, editor prompt and copy-ready packet | Read supplied material, confirm public clearance, perform factual/visual QA and any separately authorized manual edits |

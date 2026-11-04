@@ -7,3 +7,5 @@
 The capability and handoff JSON templates are portable agent/manual contracts, not runtime state files and not validated by the CLI. An adapter should version its own extensions and validators rather than silently adding unsupported fields to this strict workspace schema.
 
 Optional `improvements` entries share the current workspace and profile version references. The CLI validates bounded record fields and declared approval/safeguard requirements; an agent/person operates the trial and makes keep/revert decisions. [Improvement runbook](../docs/continuous-improvement.md).
+
+The optional profile execution bridge uses a **separate** [linkedin-execution.schema.json](linkedin-execution.schema.json) and private `profile.json` journal. It does not extend `workspace.json`. See the [execution guide](../docs/linkedin-execution.md) for actual scope, optional career-source checks, host responsibilities and manual fallback.

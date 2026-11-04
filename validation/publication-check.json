@@ -1,5 +1,5 @@
 {
-  "source_files_checked": 92,
+  "source_files_checked": 93,
   "findings": [],
   "ok": true,
   "limits": "Common-pattern scan and local-link existence only; human content/permission/license review still required."
