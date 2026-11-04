@@ -78,4 +78,15 @@ Completed records remain valid history after later profile edits. Restore prior 
 
 ## Optional LinkedIn workflow records
 
-The [LinkedIn audit](../templates/linkedin-profile-audit.md) and [update packet](../templates/linkedin-update-packet.md) are agent-maintained private Markdown. They reference the current evidence/search/style versions and separately record public clearance, drafted copy, material approval and reported/verified publication. The Python CLI has no LinkedIn adapter, profile editor, public-clearance validator or profile-state transitions. Do not add unsupported LinkedIn fields to the strict workspace schema or reuse a job-submission approval as profile-edit permission. Manual copy-paste is a complete supported handoff.
+The [LinkedIn audit](../templates/linkedin-profile-audit.md) and [update packet](../templates/linkedin-update-packet.md) are agent-maintained private Markdown. They reference current evidence/search/style versions and separately record facts, public clearance, drafted copy, exact-material approval, action permission and reported/verified publication. Do not reuse job-submission approval as profile-edit permission. Manual copy-paste is a complete supported handoff.
+
+The optional `profile` subcommands implement a separate scoped execution journal using [linkedin-execution.schema.json](../schemas/linkedin-execution.schema.json). They do not add fields to `workspace.json` or access LinkedIn. An authorized host agent may consume committed read/write jobs for headline, About and stable experience-entry body text. Skills, titles, dates, media and settings are manual-only. The bundled reference host changes only a fictional local JSON file; no live connector or UI driver is bundled or tested.
+
+```sh
+python3 -m career_pipeline profile --help
+python3 -m career_pipeline profile demo --out .private/profile-demo
+```
+
+`next`, `dispatch`, `reconcile` and `event` default to dry-run. A committed write dispatch is journaled before an executable job is emitted, and cannot be emitted a second time through that journal. The host must still enforce actual consent, account/field identity, immediate pre-save comparison, its environment's permissions and outcome verification. The local journal is editable workflow state, not tamper-resistant authorization or proof of human approval. An uncertain write cannot be blindly repeated, even when a later read shows the old value.
+
+For structured career inputs, supply `--workspace CAREER_DIRECTORY` at each validation/next/dispatch gate. Only then does the bridge compare input versions, the full career-source fingerprint and referenced confirmed claims. Without that flag it validates its stored profile plan but cannot detect later changes in external career files; a manual-source plan needs agent/person review. See [the execution guide](linkedin-execution.md) for event shapes, host responsibilities, reconciliation and the runnable fictional walkthrough.

@@ -12,9 +12,11 @@ The published v0.1.0 base contains the reusable kit and fictional demonstration 
 | `prompts/` | Start, intake, editor, role research, tailoring, independent QA and follow-up prompts |
 | `templates/` | Evidence bank, baseline, style/search, role roster/assessment, tailoring, packet, approval, reminders, QA, capabilities, handoff and blank state |
 | [schemas/workspace.schema.json](schemas/workspace.schema.json) | Portable typed local state with additional semantic rules in core |
-| `career_pipeline/` | Standard-library Python CLI and local lifecycle rules; no external adapters |
+| `career_pipeline/` | Standard-library Python CLI, local lifecycle rules and scoped profile job bridge; no live external adapters |
 | [examples/fictional/WALKTHROUGH.md](examples/fictional/WALKTHROUGH.md) | Fictional scenario and rerunnable commands |
-| [docs/linkedin-profile.md](docs/linkedin-profile.md) | Pending local LinkedIn workflow: audit, copy-ready packet, optional editor prompt and fictional example; no profile adapter |
+| [docs/linkedin-profile.md](docs/linkedin-profile.md) | Pending local LinkedIn workflow: audit, copy-ready packet, optional editor prompt and fictional example |
+| [docs/linkedin-execution.md](docs/linkedin-execution.md) | Optional scoped field-job protocol, separate private execution journal and fictional-file host demo; no live LinkedIn driver |
+| [schemas/linkedin-execution.schema.json](schemas/linkedin-execution.schema.json) | Profile plan, per-field approval, capability, attempt, request and receipt structure; additional semantic rules in profiles.py |
 | [docs/continuous-improvement.md](docs/continuous-improvement.md) | Bounded private improvement loop; local record checks, agent-operated trials and sanitized proposals |
 | `tests/` | State, consent, source status, reminder, CLI, privacy and packaging tests |
 | [tools/check_project.py](tools/check_project.py) | Offline local-link/common-leak scan and allowlisted local ZIP generation |

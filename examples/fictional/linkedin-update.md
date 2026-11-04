@@ -1,6 +1,6 @@
 # Fictional LinkedIn update: a focused first pass
 
-Every profile excerpt, conversation, clearance decision and review result here is invented. No LinkedIn page was accessed or changed. Avery Example and Harborlight Example Cooperative are fictional; the career claims come only from E-001 and E-002 in [workspace.json](workspace.json). This is a worked document example, not a CLI command or a real profile record.
+Every profile excerpt, conversation, clearance decision and review result here is invented. No LinkedIn page was accessed or changed. Avery Example and Harborlight Example Cooperative are fictional; the career claims come only from E-001 and E-002 in [workspace.json](workspace.json). This worked document example follows the manual review route. The optional [profile execution interface](../../docs/linkedin-execution.md) has a separate local fixture-host demo; neither example demonstrates live LinkedIn access.
 
 Use the [runbook](../../docs/linkedin-profile.md) and [editor prompt](../../prompts/linkedin-editor.md) for a private candidate workspace. Real profile snapshots, claim maps and approvals must not be copied into this public example.
 
@@ -27,7 +27,7 @@ This fictional decision clears the two named claims for this public wording. It 
 | Headline | Supplied text is accurate but says little about supported capabilities | Offer a capability-first headline and a leadership-first alternative |
 | About | Supplied text omits E-001's team leadership and E-002's service-lead support | Draft a short account using those claims and the approved direction |
 | Experience | Current entry/title/dates were not supplied; dates in the evidence fixture are unresolved | Offer a reusable body draft only; do not replace the heading or dates |
-| Skills | Current list unseen | Propose evidence-supported terms for review; do not claim current selections or expertise ratings |
+| Skills | Current list unseen | Propose evidence-supported terms for review/manual selection; no automatic write or expertise rating |
 | Visuals | No image or mobile view supplied | Not assessed; optional visual review can wait |
 | Privacy/visibility | Public use cleared only for E-001/E-002; settings outside scope | Include neither private details nor a job-search/availability signal |
 
@@ -67,7 +67,7 @@ Supported service leads in reviewing recurring handoff issues and documenting es
 
 The existing title and dates are outside this replacement scope. No new title or date is supplied. An entire entry is not ready to create from this body alone.
 
-### Skills — supported terms to review
+### Skills — supported terms for review/manual selection
 
 ```text
 Onboarding process design
@@ -114,3 +114,11 @@ This conditional continuation is also fictional, not an action performed by the 
 | Banner / settings | Outside scope; no action permission | No change attempted; not assessed |
 
 The overall summary is “partial manual update reported; other fields pending.” It is not “profile published” or evidence that any real account changed. Keep the before snapshot, actual approval reference and report time privately; do not invent a readback or broaden the next edit's permission.
+
+## If Avery chooses agent-host execution later
+
+Manual copying remains available. If Avery instead asks an authorized host to update a supported field, the agent follows the [execution guide](../../docs/linkedin-execution.md) and maintains separate profile execution JSON. The `python3 -m career_pipeline profile` commands initialize and inspect state, record events, list the next step, dispatch a scoped job once, and reconcile its result. The host must actually invoke its authorized integration or computer-use tool; the kit provides no live LinkedIn SDK or browser driver.
+
+The selected headline would need exact fact, public, material and edit approvals tied to its field/content, plus current session/actor/account capability evidence and expiry. The host would observe the current headline, compare it with the expected pre-edit value, perform only the authorized write, then supply actual readback for reconciliation. A prepared or dispatched job alone would not change this example's publication state. An uncertain result would stop for inspection rather than trigger a duplicate write.
+
+The automatic bridge supports only headline, About and stable-key experience body text. Skills are review/manual-only; title/date fields, unseen banner/photo, visibility, settings and notifications also remain outside automatic execution. Local record checks do not turn fictional consent or supplied observations into real consent or live evidence. This example authorizes and performs no external action.

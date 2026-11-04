@@ -1,0 +1,55 @@
+{
+  "schema_version": "linkedin-1",
+  "fictional": true,
+  "plan_id": "profile-plan-001",
+  "profile_ref": "https://profiles.example.invalid/avery",
+  "input_versions": {
+    "candidate": 1,
+    "evidence": 1,
+    "base_resume": 1,
+    "style_guide": 1,
+    "search_brief": 1
+  },
+  "source_fingerprint": "2af0a9be30ce04fee5954b75c660403e720362cd369a052af147057061edaa85",
+  "fields": [
+    {
+      "key": "headline",
+      "version": 1,
+      "before": "Operations professional",
+      "after": "Operations | Onboarding process design | Team leadership",
+      "evidence_ids": [
+        "E-001"
+      ],
+      "source_reference": "Fictional supplied text snapshot; not a live profile",
+      "source_observed_at": "2026-11-04T11:59:00Z",
+      "approvals": []
+    },
+    {
+      "key": "about",
+      "version": 1,
+      "before": "I work in operations.",
+      "after": "Led a four-person team redesigning onboarding handoffs, establishing a shared checklist and clearer ownership.",
+      "evidence_ids": [
+        "E-001"
+      ],
+      "source_reference": "Fictional supplied text snapshot; not a live profile",
+      "source_observed_at": "2026-11-04T11:59:00Z",
+      "approvals": []
+    }
+  ],
+  "capability": {
+    "status": "unverified",
+    "adapter_id": "",
+    "actor_id": "",
+    "context_id": "",
+    "profile_ref": "",
+    "fields": [],
+    "can_read": false,
+    "can_write": false,
+    "observed_at": null,
+    "expires_at": null,
+    "evidence": ""
+  },
+  "attempts": [],
+  "manual_reports": []
+}

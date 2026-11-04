@@ -1,0 +1,526 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:career-pipeline:linkedin-execution:1",
+  "title": "Scoped LinkedIn field execution bundle",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "enum": [
+        "linkedin-1"
+      ]
+    },
+    "fictional": {
+      "type": "boolean"
+    },
+    "plan_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "profile_ref": {
+      "type": "string"
+    },
+    "input_versions": {
+      "type": "object",
+      "properties": {
+        "candidate": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "evidence": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "base_resume": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "style_guide": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "search_brief": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "required": [
+        "candidate",
+        "evidence",
+        "base_resume",
+        "style_guide",
+        "search_brief"
+      ],
+      "additionalProperties": false
+    },
+    "source_fingerprint": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "fields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "before": {
+            "type": [
+              "string",
+              "array"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "after": {
+            "type": [
+              "string",
+              "array"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "source_reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_observed_at": {
+            "type": "string",
+            "minLength": 1
+          },
+          "approvals": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "kind": {
+                  "type": "string",
+                  "enum": [
+                    "facts",
+                    "public",
+                    "material",
+                    "edit"
+                  ]
+                },
+                "decision": {
+                  "type": "string",
+                  "enum": [
+                    "approved",
+                    "declined",
+                    "revoked"
+                  ]
+                },
+                "fingerprint": {
+                  "type": "string",
+                  "pattern": "^[a-f0-9]{64}$"
+                },
+                "by": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "reference": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "at": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "actor_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "context_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "expires_at": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "kind",
+                "decision",
+                "fingerprint",
+                "by",
+                "reference",
+                "at",
+                "actor_id",
+                "context_id",
+                "expires_at"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "key",
+          "version",
+          "before",
+          "after",
+          "evidence_ids",
+          "source_reference",
+          "source_observed_at",
+          "approvals"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "capability": {
+      "type": "object",
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "available",
+            "unavailable",
+            "unverified"
+          ]
+        },
+        "adapter_id": {
+          "type": "string"
+        },
+        "actor_id": {
+          "type": "string"
+        },
+        "context_id": {
+          "type": "string"
+        },
+        "profile_ref": {
+          "type": "string"
+        },
+        "fields": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "can_read": {
+          "type": "boolean"
+        },
+        "can_write": {
+          "type": "boolean"
+        },
+        "observed_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "expires_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "evidence": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "status",
+        "adapter_id",
+        "actor_id",
+        "context_id",
+        "profile_ref",
+        "fields",
+        "can_read",
+        "can_write",
+        "observed_at",
+        "expires_at",
+        "evidence"
+      ],
+      "additionalProperties": false
+    },
+    "attempts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "field_key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "profile_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fingerprint": {
+            "type": "string",
+            "minLength": 1
+          },
+          "permission_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "before": {
+            "type": [
+              "string",
+              "array"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "after": {
+            "type": [
+              "string",
+              "array"
+            ],
+            "items": {
+              "type": "string"
+            }
+          },
+          "created_at": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "read_pending",
+              "ready",
+              "write_prepared",
+              "write_dispatched",
+              "verify_required",
+              "verify_pending",
+              "uncertain",
+              "verified",
+              "already_present",
+              "blocked",
+              "conflict",
+              "not_saved"
+            ]
+          },
+          "requests": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "operation": {
+                  "type": "string",
+                  "enum": [
+                    "read_field",
+                    "replace_field"
+                  ]
+                },
+                "purpose": {
+                  "type": "string",
+                  "enum": [
+                    "preflight",
+                    "apply",
+                    "verify",
+                    "reconcile"
+                  ]
+                },
+                "created_at": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "expires_at": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "actor_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "context_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "profile_ref": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "field_key": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "fingerprint": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "before": {
+                  "type": [
+                    "string",
+                    "array"
+                  ],
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "after": {
+                  "type": [
+                    "string",
+                    "array"
+                  ],
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "pending",
+                    "prepared",
+                    "dispatched",
+                    "responded",
+                    "cancelled"
+                  ]
+                },
+                "receipt": {
+                  "type": [
+                    "object",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "operation",
+                "purpose",
+                "created_at",
+                "expires_at",
+                "actor_id",
+                "context_id",
+                "profile_ref",
+                "field_key",
+                "fingerprint",
+                "before",
+                "after",
+                "status",
+                "receipt"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "preflight": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "cancel_reference": {
+            "type": "string"
+          },
+          "scope_violation": {
+            "type": "boolean"
+          },
+          "settlement": {
+            "type": "object"
+          },
+          "outcome_conflict": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "id",
+          "field_key",
+          "profile_ref",
+          "fingerprint",
+          "permission_id",
+          "before",
+          "after",
+          "created_at",
+          "status",
+          "requests",
+          "preflight"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "manual_reports": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "field_key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fingerprint": {
+            "type": "string",
+            "minLength": 1
+          },
+          "by": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reference": {
+            "type": "string",
+            "minLength": 1
+          },
+          "at": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "reported_unverified"
+            ]
+          }
+        },
+        "required": [
+          "field_key",
+          "fingerprint",
+          "by",
+          "reference",
+          "at",
+          "status"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "fictional",
+    "plan_id",
+    "profile_ref",
+    "input_versions",
+    "source_fingerprint",
+    "fields",
+    "capability",
+    "attempts",
+    "manual_reports"
+  ],
+  "additionalProperties": false
+}

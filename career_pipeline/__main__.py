@@ -19,6 +19,7 @@ def output(value):
 def parser():
     p = argparse.ArgumentParser(description="Local career operations; no APIs, scheduling, uploads or submissions.")
     sub = p.add_subparsers(dest="command", required=True)
+    sub.add_parser("profile", help="Guarded LinkedIn field job bridge; run profile --help.")
     init = sub.add_parser("init", help="Initialize a new private workspace (never overwrites).")
     init.add_argument("workspace")
     init.add_argument("--example", action="store_true", help="Copy unmistakably fictional data.")
@@ -96,7 +97,11 @@ def demo_run(out):
 
 
 def main(argv=None):
-    args=parser().parse_args(argv)
+    effective = sys.argv[1:] if argv is None else argv
+    if effective and effective[0] == "profile":
+        from .profile_cli import main as profile_main
+        return profile_main(effective[1:])
+    args=parser().parse_args(effective)
     try:
         if args.command=="init":
             output(initialize(args.workspace,args.example));return 0

@@ -2,7 +2,7 @@
 
 Use this optional workflow when someone wants their public profile to explain their experience and direction more clearly. Begin with the [LinkedIn editor prompt](../prompts/linkedin-editor.md), reuse the career evidence bank, search brief and style guide, and keep the working audit and packet private. A polished résumé or LinkedIn connection is not required.
 
-This is a manual or agent-guided workflow. The kit has no LinkedIn reader, editor, API integration or publishing command. It can guide a review and produce editable text when an agent has the permitted inputs. It does not promise recruiter visibility, search placement, interviews or changes to a live profile.
+The consultation can use manual copying or the optional [profile execution interface](linkedin-execution.md). The local `python3 -m career_pipeline profile` CLI maintains separate execution state and prepares scoped jobs for an agent host; an authorized host integration performs any live read or edit. No live LinkedIn SDK or browser driver is implemented or tested in the kit. Its local fixture demo is fictional. The workflow does not promise recruiter visibility, search placement or interviews.
 
 ## 1. Agree on useful help today
 
@@ -10,7 +10,7 @@ Reuse answers already known, then ask only what changes the next deliverable: �
 
 Explain the experience briefly: review what the person has, identify positioning choices, bring a small set of recommendations and draft truthful language in their voice. Then map it to this session:
 
-> I can review [permitted text or materials actually available] and draft [specific sections]. I can help you copy approved text manually. [Visuals/live fields] remain unseen or unverified. No connection or additional setup is needed to begin. Any live edit would need separate permission and an available authorized capability.
+> I can review [permitted text or materials actually available] and draft [specific sections]. We can use manual copying, or [the observed, authorized host capability] for the supported fields. [Visuals/live fields/host access] remain unseen or unverified. No connection or additional setup is needed to begin. Any live edit needs separate permission for the exact content and action.
 
 Do not infer access from the agent's brand, a public URL, another session or the kit's existence. An absent connection is a reason to offer a useful manual route, not a reason to stop the consultation.
 
@@ -48,7 +48,7 @@ Use the [profile audit](../templates/linkedin-profile-audit.md). Prioritize a fe
 | Headline | Clear capabilities and direction; truthful role/title treatment; understandable audience language | One recommended version, plus an alternative if it helps the positioning decision |
 | About | A coherent first-person or preferred-voice account; specific evidence; useful breadth; privacy | Copy-ready text grounded in cleared claims, with uncertain material omitted |
 | Experience | Accurate employer, title, dates, scope and outcomes; leadership and collaborators represented fairly | Named entry and exact replacement text; preserve unresolved heading/date fields |
-| Skills | Capabilities supported by evidence and relevant to the goal | Proposed supported terms; a separate private list of skills to develop or confirm |
+| Skills | Capabilities supported by evidence and relevant to the goal | Proposed supported terms for review/manual selection; a separate private list of skills to develop or confirm |
 | Visual presentation | Intended signal, text hierarchy, legibility, contrast, cropping and mobile presentation where actually visible | Observed findings and optional asset brief; mark unseen views and asset rights unknown |
 
 Never turn a target title into a current title, coursework into a credential, a team result into solo execution or an unsupported metric into a persuasive number. Qualitative outcomes are useful. Keep “led,” “enabled,” “supported” and “executed” consistent with confirmed contribution scope.
@@ -71,17 +71,23 @@ Keep these independent records in the private packet:
 
 An approved draft does not establish that a profile changed. A person's report is useful evidence but is not an agent-observed readback. Record who observed what, when and with which limitations. Use the packet's per-field ledger: one pasted headline does not publish the About or experience. An overall status can be mixed; preserve pending, deferred and unchanged fields. Do not expose the real packet or approval records in a public issue or kit example.
 
-## 6. Hand off without implying a live edit
+## 6. Choose manual copying or guarded execution
 
-The default next action is for the person to review and manually copy the selected text if they choose. They can check formatting, truncation and the live preview themselves. Do not make manual copying depend on connecting LinkedIn. Ask only for a short completion note if useful; no screenshot is required.
+The person can review and manually copy the selected text if they choose, checking formatting, truncation and the live preview themselves. Do not make this route depend on connecting LinkedIn. Ask only for a short completion note if useful; no screenshot is required.
+
+For an agent host with authorized access, use the [execution guide](linkedin-execution.md). The separate profile CLI supports `init`, `inspect`, `event`, `next`, `dispatch`, `reconcile` and a fictional `demo`. A generic JSON bridge emits scoped read and prepared-write jobs. The host actually invokes its authorized integration or computer-use tool; emitting a job does not itself read or edit LinkedIn.
+
+The automatic bridge supports headline, About and experience body text identified by a stable entry key. Skills are review/manual-only because changing them can affect metadata, ordering and endorsements. Titles, employer details, dates, banner, photo, visibility, settings and notifications are also outside automatic execution. An experience body job cannot silently change its title, employer or dates. Keep those and any other unsupported change in a separately reviewed manual handoff.
 
 If a live agent edit is later requested, establish actual capability and obtain separate explicit authorization for the action, profile destination, exact fields, exact approved content/version and limits. Keep visibility/settings/contact actions separately scoped. Follow the environment's permission rules. Draft approval, account access or permission to review a profile is not permission to save or publish changes.
 
-Recheck the current field before replacing it, stop on unexpected or conflicting content, and inspect the actual result after an authorized action. If a save times out or the result is uncertain, inspect before any retry. Record publication only from actual evidence; do not invent a receipt or claim that an unchanged section was inspected.
+For guarded dispatch, record current session, actor and account capability evidence with expiry; exact field-level fact, public, material and edit approvals; and the observed current values to compare before writing. The durable one-time dispatch record prevents treating the same authorized job as a repeatable write. These local checks validate supplied records and scope, not semantic truth, genuine human consent or the host's actual behavior. Never invent events or approvals to pass them.
+
+Recheck the current field before replacing it, stop on unexpected or conflicting content, and obtain actual readback after an authorized action. Reconciliation compares the host's supplied readback with the expected values; the host is responsible for genuine observations. If a save times out or the result is uncertain, inspect and reconcile before any retry or replacement job. Record publication only from actual evidence; do not invent a receipt or claim that an unchanged section was inspected.
 
 ## 7. Save a short checkpoint
 
-Maintain the audit, editable packet, public-clearance decisions, unresolved questions and next owner/action in the person's private workspace. Reuse the existing handoff and version conventions; these Markdown records do not add fields to the CLI's strict workspace schema. Bring useful new career evidence back to the bank for confirmation, and propose any search/style change rather than silently applying it.
+Maintain the audit, editable packet, public-clearance decisions, unresolved questions and next owner/action in the person's private workspace. When using execution, retain its separate profile state and job/result references there too. Reuse the existing handoff and version conventions; neither the Markdown records nor the separate execution JSON add fields to the career CLI's strict `workspace.json` schema. Bring useful new career evidence back to the bank for confirmation, and propose any search/style change rather than silently applying it.
 
 A returning check-in can be brief: “We chose the operations-focused direction and drafted the headline and About. Nothing has been published. Would you like to approve those, revise the voice, or leave them while we review roles?” Use the [agent-loop contract](agent-loop.md) for a handoff and the [bounded improvement runbook](continuous-improvement.md) if repeated friction warrants one small trial.
 

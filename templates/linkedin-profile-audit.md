@@ -1,6 +1,6 @@
 # Private LinkedIn profile audit
 
-Use with the [runbook](../docs/linkedin-profile.md) and [LinkedIn editor prompt](../prompts/linkedin-editor.md). The agent fills this from permitted resources; the person does not need to complete a form. Keep real snapshots, observations and decisions in the private workspace.
+Use with the [runbook](../docs/linkedin-profile.md), [LinkedIn editor prompt](../prompts/linkedin-editor.md) and optional [execution interface](../docs/linkedin-execution.md). The agent fills this from permitted resources; the person does not need to complete a form. Keep real snapshots, observations and decisions in the private workspace.
 
 Audit version: [ ] · Owner/date/timezone: [ ] · Private checkpoint: [ ]
 
@@ -24,6 +24,8 @@ Audit version: [ ] · Owner/date/timezone: [ ] · Private checkpoint: [ ]
 
 This session can: [observed evidence]. Manual route: [review and copy approved text]. Unverified/unavailable: [live fields, visuals, editing, etc.]. Optional setup: [only if useful; none required to begin]. No LinkedIn connection, upload or login is required for a text review.
 
+Optional execution route: [not chosen / unavailable / authorized host integration and current evidence]. Session / actor / target account / evidence checked time and expiry: [ ]. Private profile execution state and job references: [separate from `workspace.json`; agent-maintained]. The local CLI prepares and records scoped jobs; it does not itself operate LinkedIn. Do not promote capability from a fictional demo or an old session.
+
 ## Positioning choices
 
 - Desired signal in one sentence: [proposed, not a new career fact]
@@ -39,8 +41,8 @@ This session can: [observed evidence]. Manual route: [review and copy approved t
 | --- | --- | --- | --- | --- |
 | Headline | [or not supplied] | [ ] | [ ] | [ ] |
 | About | [or not supplied] | [ ] | [ ] | [ ] |
-| Experience | [named entry; title/dates separately] | [ ] | [ ] | [ ] |
-| Skills | [or not supplied] | [supported vs unconfirmed] | [ ] | [ ] |
+| Experience | [named entry; stable key for execution; title/dates separately] | [ ] | [body-only execution scope or manual handoff] | [ ] |
+| Skills | [or not supplied] | [supported vs unconfirmed] | [review/manual-only; no automatic write] | [ ] |
 | Visual presentation | [or not assessed] | [only observed communication] | [ ] | [ ] |
 
 ## Public clearance, separate from fact approval
@@ -74,4 +76,4 @@ Recommended next output / owner: [named sections and packet version]
 
 Candidate's selected next action: [ ] · Deferred questions: [ ]
 
-Next: create the [update packet](linkedin-update-packet.md). This audit neither approves text nor edits/publishes a profile.
+Next: create the [update packet](linkedin-update-packet.md). If execution is chosen, carry the confirmed scope into the separate execution state using the guide; only headline, About and stable-key experience body text support automatic jobs. Skills are review/manual-only; titles, dates, banner, photo, visibility, settings and notifications are also outside automation. This audit neither approves text nor edits/publishes a profile. The kit implements local state, guarded job dispatch and reconciliation; actual live tool use belongs to the authorized host and is not demonstrated by the fictional fixture.

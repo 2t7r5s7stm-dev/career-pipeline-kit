@@ -45,7 +45,9 @@ Together, assess headline, About, experience, skills and visual presentation aga
 
 Confirmed facts still need clearance for a public profile, especially employer metrics and internal systems. Preserve your preferences about job-search visibility. Drafting or approving text does not authorize changing your profile, banner, settings or notifications. The [review packet](templates/linkedin-update-packet.md) keeps drafted, approved and actually published changes separate and supports manual copy-paste. [See a fictional example](examples/fictional/linkedin-update.md).
 
-This is an agent-guided workflow, with no LinkedIn API, connector requirement or CLI profile editor.
+If your agent has a permitted integration or computer-control capability, the optional [execution bridge](docs/linkedin-execution.md) can issue scoped jobs for individually approved headline, About and stable experience-entry body text. It checks recorded decisions and current capability, preserves a one-time dispatch journal, and tracks readback and uncertainty. The agent performs any real tools under its environment's rules; the CLI never accesses LinkedIn. Skills, titles, dates, media and settings remain manual-only in this bridge.
+
+No live LinkedIn connector or UI driver is bundled or tested. The runnable reference host changes only a fictional local JSON file. Manual copy-paste remains a complete path, with no setup required.
 
 ## What works today
 
@@ -53,6 +55,7 @@ This is an agent-guided workflow, with no LinkedIn API, connector requirement or
 | --- | --- | --- |
 | Intake, editing, research and tailoring | Guides, prompts and templates | Conduct the conversation and operate available authorized tools |
 | LinkedIn review | Runbook, audit template, editor prompt and copy-ready packet | Read supplied material, confirm public clearance, perform factual/visual QA and any separately authorized manual edits |
+| LinkedIn field execution | Local approval/capability gates, durable scoped job journal, receipt/readback states and fictional-file host demo | Supply an actually available permitted host, verify real consent/account/field, execute at most once and report honest results; no live LinkedIn adapter is bundled |
 | State | Local JSON structure and semantic validation | Enter evidence accurately and preserve private checkpoints |
 | Lifecycle | Pure transitions; default dry-run; explicit `--commit` writes local state | Record actual human decisions and resolve uncertainties |
 | Packets | Render approved exact claims into editable Markdown; hash files; preserve prior output folders | Role-specific writing and any Word/PDF export, factual and visual review |
@@ -77,6 +80,14 @@ python3 -m career_pipeline verify-packet .private/demo-run/packet-v1
 ```
 
 The demo uses reserved `.invalid` domains and simulated approvals/observations. It generates editable materials, hashes, proposed reminders and a later closed-role scenario. It never visits a real posting or sends an application. [Read the walkthrough](examples/fictional/WALKTHROUGH.md).
+
+The optional profile demo likewise stays local:
+
+```sh
+python3 -m career_pipeline profile demo --out .private/profile-demo
+```
+
+It simulates approvals, updates one headline in a fictional JSON fixture and reads it back; the About field remains unattempted. It makes zero live LinkedIn calls. See the [execution guide](docs/linkedin-execution.md) before adapting the host interface.
 
 For a new private workspace:
 

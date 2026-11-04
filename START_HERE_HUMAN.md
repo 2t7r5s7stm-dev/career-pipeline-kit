@@ -60,6 +60,8 @@ It can help assess your headline, About, experience, skills and visual presentat
 
 A fact you approved for a résumé may still be unsuitable for a public profile. Decide separately what may be public, including employer metrics, internal systems and contact details. No publishing, profile edits, banner replacement or visibility/notification changes follow from drafting approval. You can copy approved sections yourself; “drafted,” “approved” and “published” are different states.
 
+If your agent actually has permitted tools to edit your profile, it may offer to apply an exact field you approve. It must explain the account, field and text first, obtain separate edit permission, check the current value and verify the result. The kit includes an optional execution bridge for that handoff, but no live LinkedIn connection or editor. You can begin and finish with manual copy-paste; you do not need to run code or manage the technical records. Uncertain results stay unverified until checked, and one updated field does not mean the whole profile is done.
+
 Try: “Help me update my LinkedIn using the evidence and goals we already have. Read what I share before asking questions, mark what you cannot see, and give me a few accurate positioning choices with copy-ready revisions. Ask what is safe for a public profile. Leave edits and visibility settings to my separate decision.”
 
 Your agent can follow the [LinkedIn runbook](docs/linkedin-profile.md) and [profile editor prompt](prompts/linkedin-editor.md).

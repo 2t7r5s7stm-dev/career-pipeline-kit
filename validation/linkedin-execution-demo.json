@@ -1,0 +1,40 @@
+{
+  "fictional_simulation": true,
+  "live_linkedin_calls": 0,
+  "local_fixture_writes": 1,
+  "headline": "verified",
+  "about": "not_attempted",
+  "whole_profile_published": false,
+  "state_errors": [],
+  "manual_route_available": true,
+  "jobs": [
+    {
+      "operation": "read_field",
+      "purpose": "preflight",
+      "status": "read_pending",
+      "execute": true,
+      "field_key": "headline"
+    },
+    {
+      "operation": "replace_field",
+      "purpose": "apply",
+      "status": "write_prepared",
+      "execute": false,
+      "field_key": "headline"
+    },
+    {
+      "operation": "replace_field",
+      "purpose": "apply",
+      "status": "write_dispatched",
+      "execute": true,
+      "field_key": "headline"
+    },
+    {
+      "operation": "read_field",
+      "purpose": "verify",
+      "status": "verify_pending",
+      "execute": true,
+      "field_key": "headline"
+    }
+  ]
+}

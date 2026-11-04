@@ -95,7 +95,7 @@ Use new information to update the evidence bank, search brief or style guide bef
 
 When the candidate intends to apply, check the official employer or ATS posting again and record what was observable and when. A blocked, login-only or inconclusive page means unknown. If a role closes after tailoring, preserve the work, stop application prompts for that requisition and ask whether to archive it or explore a related requisition. A new or reposted requisition gets its own identity and history.
 
-For a LinkedIn request, [follow the profile workflow](linkedin-profile.md) rather than replaying intake. Approval of résumé facts or a profile draft is not clearance for public disclosure or permission to edit an account. Keep the public-clearance map, exact-copy approval and actual publication evidence separate. The local CLI does not enforce these profile records.
+For a LinkedIn request, [follow the profile workflow](linkedin-profile.md) rather than replaying intake. Approval of résumé facts or a profile draft is not clearance for public disclosure or permission to edit an account. Keep the public-clearance map, exact-copy approval and actual publication evidence separate. The optional [execution bridge](linkedin-execution.md) checks scoped declared approvals and dispatch history in a separate private journal; the host must establish real consent, capability and live outcomes. An uncertain earlier attempt blocks further writes to that field.
 
 ## A useful session ending
 

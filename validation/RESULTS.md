@@ -59,3 +59,7 @@ Actual user identity/consent, destination/recipient/actor/time restrictions, scr
 Full historical workspace checkpoints are saved by the agent/operator before edits. CLI preserves prior structured packets and refuses existing output directories; it does not archive every JSON edit. Reminder proposals are not scheduled notifications. No real-world continued availability is guaranteed.
 
 Public v0.1 early release is authorized. The license split is Apache 2.0 for code and specified implementation files, and CC BY 4.0 for authored guides/templates and fictional content, with attribution to James E. Dunn. The public repository starts with clean history and a reviewed source file set. Live automation still needs separately implemented/reviewed adapters and authorization.
+
+## Pending local LinkedIn addition · 2026-11-04
+
+The unpublished `linkedin-profile-workflow` branch adds consultative profile review and a scoped execution bridge, with manual fallback and a fictional local-file host. The full suite now passes **80 tests**, including 35 new profile regression tests. A separate reviewer ran 17 independent probes and the full suite; identified issues were fixed and no substantive finding remains open. See the [focused review](linkedin-workflow-review.md) for implementation boundaries, exact checks, source-gate limitations and host responsibilities, plus the [retained fictional demo](linkedin-execution-demo.json). This does not change the published v0.1.0 artifacts or claim a tested live LinkedIn adapter.

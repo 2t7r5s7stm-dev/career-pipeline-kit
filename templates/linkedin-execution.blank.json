@@ -1,0 +1,30 @@
+{
+  "schema_version": "linkedin-1",
+  "fictional": false,
+  "plan_id": "profile-plan-001",
+  "profile_ref": "",
+  "input_versions": {
+    "candidate": 1,
+    "evidence": 1,
+    "base_resume": 1,
+    "style_guide": 1,
+    "search_brief": 1
+  },
+  "source_fingerprint": "0000000000000000000000000000000000000000000000000000000000000000",
+  "fields": [],
+  "capability": {
+    "status": "unverified",
+    "adapter_id": "",
+    "actor_id": "",
+    "context_id": "",
+    "profile_ref": "",
+    "fields": [],
+    "can_read": false,
+    "can_write": false,
+    "observed_at": null,
+    "expires_at": null,
+    "evidence": ""
+  },
+  "attempts": [],
+  "manual_reports": []
+}
